@@ -41,12 +41,12 @@
     }).addTo(map);
 
     var uncIcon = L.icon({    // notice the L.icon which is a Leaflet object with properties
-        iconUrl: '/Users/CampbellWorsley/GEOG456/GEOG456/Assignment2/paris-tower-yes-please.png',   
+        iconUrl: '/paris-tower-yes-please.png',   
           // this points to a jpg image obtained from the internet
         iconSize: [110,110], // size of the icon
         popupAnchor: [0,0] // where the icon is located relative to the lat lon of the point. 
         });
-    var customPopup = "The Eiffel Tower in Paris, France! It is an extremely famous landmark of Europe.<br/><img src='/Users/CampbellWorsley/GEOG456/GEOG456/Assignment2/eiffel_image.jpg' width='100px'/>";
+    var customPopup = "The Eiffel Tower in Paris, France! It is an extremely famous landmark of Europe.<br/><img src='/eiffel_image.jpg' width='100px'/>";
     L.marker([48.85828, 2.29452],{icon: uncIcon}).addTo(map)
         .bindPopup(customPopup) // YOU CAN CHANGE THE MESSAGE
         .openPopup();
